@@ -31,3 +31,4 @@ public class FieldGoalCalculator
 Kick power:
 Kick accuracy:
 Slant: -0.0235x + 1.65
+*/
