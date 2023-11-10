@@ -92,7 +92,11 @@ if (offense == OffensivePlay.Option && defense == DefensivePlay.ThreeFour)
   //qb awareness should negatively impact outcome if equal to or below 50
   if (avgQbAwareness <= 50)
   {
-    qbAwarenessOutcome = qbAwarenessOutcome * -1;
+    qbAwarenessOutcome = (qbAwarenessOutcome * -0.5);
+  }
+  else
+  {
+    qbAwarenessOutcome = qbAwarenessOutcome / 2;
   }
 
   //final probability adjustor
@@ -162,3 +166,7 @@ if (offense == OffensivePlay.PlayAction && defense == DefensivePlay.FourThree)
   }
     
 }
+
+//------------------------------------------------------------------------------------
+//IF GAIN == TRUE, GAIN IS BASED ON SPEED?
+//IF GAIN == FALSE, LOSS IS BASED ON ????
