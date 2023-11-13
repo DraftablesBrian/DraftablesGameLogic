@@ -17,6 +17,11 @@ if (offense == OffensivePlay.Run && defense == DefensivePlay.Blitz)
   {
     gainProbability = 0.5;
   }
+    if (gainProbability < 0)
+    {
+      gainProbability = 0;
+    }
+  //gainProbability should then be the percentage chance of the offensive team gaining yards. The maximum chance is 50%
 }
 
 //------------------------------------------------------------------------------------
